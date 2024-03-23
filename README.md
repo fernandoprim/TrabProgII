@@ -17,6 +17,9 @@ de todos os sócios.
 -> Uma função capaz de calcular a arrecadação total dos sócios em cada classificação.
 + informaArrecadacao(): String
 
+-> Uma função capaz de adicionar um Socio novo. (Não pode haver repetição de matrícula).
++ addSocio(matricula : int): boolean
+
 -> Uma função capaz de remover um Socio caso sua matricula esteja registrada.
 + removerSocio(matricula : int): boolean
 
