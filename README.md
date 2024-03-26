@@ -21,8 +21,8 @@ Requisitos:
 + informaArrecadacao(): String
 
 4 -> Uma meio capaz de adicionar um Socio novo. (Não podendo haver repetição de matrícula ou CPF).
-  4.1 - validarCPF(cpf : String) boolean
-  4.2 - validarMatricula(matricula : int) boolean
+  4.1 - validarInfo(cpf : String) boolean
+  4.2 - validarInfo(matricula : int) boolean
 
 5 -> Uma função capaz de remover um Socio (Caso sua matricula esteja registrada).
 + removerSocio(matricula : int): boolean
