@@ -1,42 +1,49 @@
 public abstract class Socio {
-
     protected String nome;
     protected int idade;
     protected int matricula;
     protected String CPF;
 
-    protected double valorPago;
-
-    public Socio(String nome, int idade, String CPF) {
-
+    public Socio(String nome, int matricula, int idade, String CPF) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.idade = idade;
+        this.CPF = CPF;
     }
 
     @Override
     public String toString() {
-        return "Socio{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", matricula=" + matricula +
-                ", CPF='" + CPF + '\'' +
-                '}';
+        return "\n Socio: " + "\n" +
+                "Nome: " + nome +
+                ", Idade: " + idade +
+                ", Matricula: " + matricula +
+                ", CPF:" + CPF + ", ";
     }
-
-    public abstract double calculaArrecadacao();
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public boolean setNome(String nome) {
+        if(!nome.isEmpty()){
+            this.nome = nome;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public int getIdade() {
         return idade;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public boolean setIdade(int idade) {
+        if(idade > 0){
+            this.idade = idade;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public int getMatricula() {
@@ -51,7 +58,12 @@ public abstract class Socio {
         return CPF;
     }
 
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
+    public boolean setCPF(String CPF) {
+        if(!CPF.isEmpty()){
+            this.CPF = CPF;
+            return true;
+        } else {
+            return false;
+        }
     }
 }
