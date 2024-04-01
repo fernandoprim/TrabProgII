@@ -36,3 +36,6 @@ Mensalidade: $225,00
 Anuidade: R$980,00
 
 ----------------------------------------
+
+--> Esse trabalho foi criado em conjunto com @KevinStrey
+
